@@ -1,0 +1,25 @@
+@import '../../setting';
+$list-bg-color:#ebecf0;
+
+
+$column-header-height:36px;
+$column-footer-height:36px;
+$column-border-radius:8px;
+$card-border-radius:5px;
+
+li{
+    background-color: #fff;
+    padding:$gap;
+    border-radius: $card-border-radius;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    &:not(:last-child){
+      margin-bottom: $gap;
+    }
+    img{
+      display: block;
+      width: calc(100% + 2 * #{$gap});
+      margin: -$gap 0 $gap (-$gap);
+      border-top-left-radius:$card-border-radius;
+      border-top-right-radius: $card-border-radius;
+    }
+  }

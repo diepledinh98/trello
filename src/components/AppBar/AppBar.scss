@@ -1,0 +1,10 @@
+$appbar-bg-color:#0076a3;
+$gap:10px;
+
+.navbar-app{
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+    background-color: $appbar-bg-color;
+    font-size: 1.5rem;
+  }
