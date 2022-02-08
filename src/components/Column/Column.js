@@ -1,23 +1,22 @@
 import React from "react";
-import Task from "../Task/Task";
+import Card from "../Card/Card";
 
 
+import { mapOrder } from "../../untilities/sorts";
 import './Column.scss';
 
-function Column() {
+function Column(props) {
+    const { column } = props
+    const cards = mapOrder(column.cards, column.cardOrder, 'id')
+
     return (
         <div className='column'>
             <header>
-                Brain Storm
+                {column.title}
             </header>
-            <ul>
-                <Task />
-                <li>Ăn tết xong kiếm tiền</li>
-                <li>Ăn tết xong kiếm tiền</li>
-                <li>Ăn tết xong kiếm tiền</li>
-                <li>Ăn tết xong kiếm tiền</li>
+            <ul className="card-list">
+                {cards.map((card, index) => <Card key={index} card={card} />)}
 
-                <li>Ăn tết xong kiếm tiền</li>
             </ul>
 
             <footer>Add another card</footer>
