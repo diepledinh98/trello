@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react'
 
 
-import './Card.scss';
+import './Card.scss'
 
 function Card(props) {
-    const { card } = props
-    console.log(card)
-    return (
-        <li>
-            {card.cover && <img src={card.cover} alt='dieple' />}
+  const { card } = props
 
-            {card.title}
-        </li>
-    )
+  return (
+    <div className='card-item'>
+      {card.cover && <img src={card.cover} alt='dieple' />}
+
+      {card.title}
+    </div>
+  )
 }
 
-export default Card;
+export default Card
