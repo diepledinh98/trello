@@ -38,12 +38,27 @@ $card-border-radius:5px;
       font-weight: bold;
       border-bottom-left-radius: $column-border-radius;
       border-bottom-right-radius: $column-border-radius;
+      color: #888;
+      .footer-actions{
+        margin-left: 10px;
+        cursor: pointer;
+        
+        &:hover{
+          color:#333;
+          
+        }
+      }
+      .icon{
+        font-size: 14px;
+        margin-right: 5px;
+        color: #888;
+      }
     }
 
     .card-list{
       list-style-type: none;
       margin: 0;
-      max-height: calc(100% - #{$column-header-height} -#{$column-footer-height});
+      max-height: 480px;
       overflow-y: auto;
      
       .card-ghost {
@@ -61,4 +76,6 @@ $card-border-radius:5px;
         margin: 5px;
       }
     }
+
+    
   }
