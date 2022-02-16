@@ -20,8 +20,8 @@ $card-border-radius:5px;
       margin-left: 10px;
       background-color: #949fca;
       width: 250px;
-      height: 32px;
-      padding: 4px 0 4px 15px;
+      
+      padding: 2px 0 4px 15px;
       line-height: 32px;
       color: #fff;
       border-radius: 5px;
@@ -36,4 +36,31 @@ $card-border-radius:5px;
         background-color: rgb(152, 185, 218);
       }
     }
+
+    .enter-new-column{
+      width: 250px;
+      max-width: 250px;
+      background-color: rgb(237, 237, 238);
+      line-height: 32px;
+      padding: 2px 0 2px 2px;
+      margin-left: 10px;
+      border-radius: 5px;
+
+
+      input.input-enter-new-column{
+        margin: 5px 0;
+      }
+
+      .icon{
+        font-size: 22px;
+        padding:0 20px;
+        cursor: pointer;
+        color: #ee5253;
+        &:hover{
+          color: darken(#ee5253,10);
+        }
+      }
+    
+    }
+
   }
